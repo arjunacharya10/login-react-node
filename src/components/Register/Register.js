@@ -49,7 +49,7 @@ class Register extends React.Component{
     
     onSubmitPressed=async ()=>{
         if(this.validateExpression(this.state.name,this.state.email,this.state.password)){
-            await fetch('http://localhost:3000/register',{
+            await fetch('https://hidden-brushlands-57444.herokuapp.com/register',{
                 method: 'post',
                 headers:{'Content-type':'application/json'},
                 body: JSON.stringify({

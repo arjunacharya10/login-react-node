@@ -56,7 +56,7 @@ class App extends React.Component{
             .then(resp => this.calculateFace(resp))
             .catch(err=> console.log(err));
         console.log('Clicked');*/
-        fetch('http://localhost:3000/image',{
+        fetch('https://hidden-brushlands-57444.herokuapp.com/image',{
             method: 'put',
             headers:{'Content-type':'application/json'},
             body: JSON.stringify({
